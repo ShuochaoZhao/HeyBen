@@ -4,24 +4,41 @@
 <html lang="en" ng-app="iftaApp" >
 <head>
     <meta charset="UTF-8">
-    <title>IFTA Selection</title>
+    <title>HeyBen</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="..\css\HeyBenStyle.css">
+    <link rel="stylesheet" href="../src/main/CSS/HeyBen.css">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js"></script>
     <!--<script src="..\js\iftaApp.js"></script>-->
 
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </head>
 <body>
     <!--head-->
-    <div class="header-bar col-sm-12">
-        <p class="header-log">HeyBen</p>
+    <div class="col-sm-12 header">
+        <ul class="nav nav-tabs header-nav">
+            <li><a>HeyBen</a></li>
+            <li><a href="#">Dash Board</a></li>
+            <li><a href="#">My Tools</a></li>
+        </ul>
 
-        <p class="header-account">Hello Shuochao Zhao</p>
-        <a class="header-link">Log Out</a>
+        <div class="dropdown header-log">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                Hi Shuochao
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+
     </div>
+
 </body>
 </html>
