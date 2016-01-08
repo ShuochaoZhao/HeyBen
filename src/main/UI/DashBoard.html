@@ -1,0 +1,32 @@
+
+<div class="col-sm-6">
+    <div class="panel" style="height:200px;">
+        <h3>System Notification</h3>
+        <ul ng-repeat="sysNote in sysNotes">
+        <li>{{sysNote.say}}</li>
+    </ul>
+    </div>
+
+    <div class="panel" style="height:500px;">
+        <h3>My Courses</h3>
+        <table>
+            <tr>
+                <th>Course Name</th>
+                <th>Teacher Name</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+
+            <tr ng-repeat="course in courses">
+                <td><a href="#/{{course.name}}">{{course.name}}</a></td>
+                <td>{{course.teacher}}</td>
+                <td>{{course.startDate}}</td>
+                <td>{{course.endDate}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="col-sm-5 panel" style="height:710px;">
+    <h3>My boss said he had not decided what to put...</h3>
+</div>

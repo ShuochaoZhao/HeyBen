@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <!DOCTYPE html>
-<html lang="en" ng-app="iftaApp" >
+<html lang="en" ng-app="HeyBenApp" >
 <head>
     <meta charset="UTF-8">
     <title>HeyBen</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/main/CSS/HeyBen.css">
+    <link rel="stylesheet" href="..\css\HeyBen.css">
+
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js"></script>
-    <!--<script src="..\js\iftaApp.js"></script>-->
+    <script src="..\js\HeyBenApp.js"></script>
+    <script src="..\js\HBDashBoardApp.js"></script>
 
     <script src="//code.jquery.com/jquery-1.11.3.js"></script>
     <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
@@ -22,12 +24,12 @@
     <div class="col-sm-12 header">
         <ul class="nav nav-tabs header-nav">
             <li><a>HeyBen</a></li>
-            <li><a href="#">Dash Board</a></li>
-            <li><a href="#">My Tools</a></li>
+            <li><a href="#/">Dash Board</a></li>
+            <li><a href="#/MyTools">My Tools</a></li>
         </ul>
 
         <div class="dropdown header-log">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+            <button class="btn header-btn dropdown-toggle" type="button" data-toggle="dropdown">
                 Hi Shuochao
                 <span class="caret"></span>
             </button>
@@ -37,7 +39,11 @@
                 <li><a href="#">Log Out</a></li>
             </ul>
         </div>
+    </div>
 
+    <!--body-->
+    <div class="col-sm-12">
+        <div ng-view></div>
     </div>
 
 </body>
