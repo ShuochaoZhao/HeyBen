@@ -14,6 +14,9 @@ HeyBenApp.config(function($routeProvider) {
             templateUrl: '../UI/MyTools.html',
             controller: 'HeyBenCtrl'
         }).
+        when('/:courseId', {
+            templateUrl: '../UI/HeyBenCourse.html',
+        }).
         otherwise({
             redirectTo: '/'
         });
