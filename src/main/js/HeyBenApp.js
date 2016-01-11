@@ -2,7 +2,12 @@
  * Created by ShuochaoZhao on 1/5/16.
  */
 
-var HeyBenApp = angular.module('HeyBenApp', ['ngRoute', 'HBDashBoardApp']);
+var HeyBenApp = angular.module('HeyBenApp',
+    [
+        'ngRoute',
+        'HeyBenControllers',
+        'HeyBenFactories'
+    ]);
 
 HeyBenApp.config(function($routeProvider) {
     $routeProvider.
@@ -14,8 +19,9 @@ HeyBenApp.config(function($routeProvider) {
             templateUrl: '../UI/MyTools.html',
             controller: 'HeyBenCtrl'
         }).
-        when('/:courseId', {
+        when('/:Id', {
             templateUrl: '../UI/HeyBenCourse.html',
+            controller: 'HBCourseCtrl'
         }).
         otherwise({
             redirectTo: '/'
