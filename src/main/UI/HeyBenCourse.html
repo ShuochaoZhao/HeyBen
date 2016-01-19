@@ -3,11 +3,11 @@
     <hr>
     <!--Button Menue-->
     <div class="btn-group-vertical col-sm-12">
-        <a class="btn btn-primary" href="#/{{course.name}}/Home">Home</a>
-        <a class="btn btn-primary" href="#/{{course.name}}/FilesDownload">Files Download</a>
-        <a class="btn btn-primary" href="#/{{course.name}}/HomeWork">Homework Upload</a>
-        <a class="btn btn-primary" href="#/{{course.name}}/Scores">Scores</a>
-        <a class="btn btn-primary" href="#/{{course.name}}/Forum">Forum</a>
+        <a class="btn btn-primary" ng-click="pagePass('Home')">Home</a>
+        <a class="btn btn-primary" ng-click="pagePass('FilesDownload')">Files Download</a>
+        <a class="btn btn-primary" ng-click="pagePass('HomeWork')">Homework Upload</a>
+        <a class="btn btn-primary" ng-click="pagePass('Scores')">Scores</a>
+        <a class="btn btn-primary" ng-click="pagePass('Forum')">Forum</a>
     </div>
 </div>
 
@@ -15,10 +15,10 @@
     <!--<course-sub-nav current="sub"></course-sub-nav>-->
 
     <ng-switch on="sub">
-        <div ng-switch-when="{{course.name}}/Home">
+        <div ng-switch-when="Home">
             Home Page
         </div>
-        <div ng-switch-when="{{course.name}}/FilesDownload">
+        <div ng-switch-when="FilesDownload">
             FilesDownload
         </div>
         <div ng-switch-when="HomeWork">
