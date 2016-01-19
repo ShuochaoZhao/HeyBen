@@ -1,6 +1,35 @@
-<h1>{{course.name}}</h1>
-<ul>
-    <li>Population: {{course.population | number }}</li>
-    <li>Capital: {{course.capital}}</li>
-    <li>GDP: {{course.gdp | currency }}</li>
-</ul>
+<div class="col-sm-3 panel" style="background-color:#CCCCCC;">
+    <h4 style="text-align:center;">{{course.name}}</h4>
+    <hr>
+    <!--Button Menue-->
+    <div class="btn-group-vertical col-sm-12">
+        <a class="btn btn-primary" href="#/{{course.name}}/Home">Home</a>
+        <a class="btn btn-primary" href="#/{{course.name}}/FilesDownload">Files Download</a>
+        <a class="btn btn-primary" href="#/{{course.name}}/HomeWork">Homework Upload</a>
+        <a class="btn btn-primary" href="#/{{course.name}}/Scores">Scores</a>
+        <a class="btn btn-primary" href="#/{{course.name}}/Forum">Forum</a>
+    </div>
+</div>
+
+<div class="col-sm-8 panel" style="background-color:#CCCCCC;">
+    <!--<course-sub-nav current="sub"></course-sub-nav>-->
+
+    <ng-switch on="sub">
+        <div ng-switch-when="{{course.name}}/Home">
+            Home Page
+        </div>
+        <div ng-switch-when="{{course.name}}/FilesDownload">
+            FilesDownload
+        </div>
+        <div ng-switch-when="HomeWork">
+            Homework Upload
+        </div>
+        <div ng-switch-when="Scores">
+            Scores
+        </div>
+        <div ng-switch-when="Forum">
+            Forum
+        </div>
+    </ng-switch>
+</div>
+
