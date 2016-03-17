@@ -1,9 +1,13 @@
 {
   "name": "hey-ben",
   "version": "0.0.1",
+  "description": "Heyben app UI project",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
-  }
+    "url": "https://github.com/OnionCoder/HeyBen.git"
+  },
+  "author": [
+    "OnionCoder"
+  ]
 }
